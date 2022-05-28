@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<div class="form">
+		<form>
+			<div class="space">
+				<label class="label1">Select your source : </label>
+				<div class="vertical"></div>
+				<input class="input" id="unique" type="text" minlength="5" value="Google Cloud Storage">
+			</div>
+			<br>
+
+			<div class="space1">
+				<label>Provide a name for pipeline: </label>
+				<div class="vertical"></div>
+				<input class="input" id="input" type="text" minlength="5"
+					placeholder='e.g., cust_shop_energy_gateway001' pattern="^[a-zA-Z][a-zA-Z0-9]*$">
+			</div>
+			<br>
+
+			<div class="space2">
+				
+				<label>GCS project name : </label>
+				<div class="vertical"></div>
+				<input class="input" id="input" type="text" minlength="5" placeholder='project-id'
+					pattern="^[a-zA-Z][a-zA-Z0-9]*$">
+			</div>
+			<br>
+
+			<div class="space3">
+				<label>GCS bucket name : </label>
+				<div class="vertical"></div>
+				<input class="input" id="input" type="text" minlength="5" placeholder='gs://your-bucket'
+					pattern="^[a-zA-Z][a-zA-Z0-9]*$">
+			</div>
+			<br>
+
+			<div class="space4">
+				<label>Input Cloud Storage File(s) : </label>
+				<div class="vertical"></div>
+				<input class="input" id="input" type="text" minlength="5" placeholder="GCS location of your files"
+					pattern="^[a-zA-Z][a-zA-Z0-9]+$">
+			</div>
+
+
+			<pre class="para">Example:
+		          gs://your-bucket/your-files/01.csv</pre>
+
+			<div class="space5">
+				<label>GCS credentials : </label>
+				<div class="vertical"></div>
+				<input class="input1" id="input" type="text" minlength="5" pattern="^[a-zA-Z][a-zA-Z0-9]*$">
+			</div>
+			<br>
+			<div class="space6">
+				<label>Run Every : </label>
+				<div class="vertical"></div>
+				<input class="input" id="input" type="text" minlength="5" placeholder='(in minutes)'
+					pattern="^[a-zA-Z][a-zA-Z0-9]*$">
+			</div>
+			<br>
+			<button class="btn1">Create</button>
+			<button class="btn2">Cancel</button>
+		</form>
+	</div>
+</body>
+
+</html>
